@@ -7,9 +7,14 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../Css/Style.css">
     <link rel="shortcut icon" href="../assets/NUEVO LOGO1.png">
+    <link rel="stylesheet" href="../animate-wow/animate.min.css">
+    <script src="../animate-wow/wow.min.js"></script>
+    <script>
+        new WOW ().init();
+    </script>
 </head>
 <body>
-    <header>
+    <header  id="grad">
         <a href="../index.html"><img class="logotaller" src="../assets/NUEVO LOGO1.png" alt="Logo"></a>
         <div><label for="buscar productos"></label>
             <input type="search" name="buscar productos" placeholder="Buscar productos" class="buscador"/>
@@ -18,7 +23,7 @@
         <!-- Aca va el logo de la cuenta -->
         <!-- Aca va el logo del carrito de compras -->
 
-        <nav>
+        <nav class="wow animate__animated animate__backInRight">
          <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/Productos.html">Productos</a>
@@ -62,13 +67,15 @@
     </aside>
 
     <footer>
-        
+
+        <div class="wow animate__animated animate__shakeX">
         <img src="../assets/logoface.jpeg" alt="Facebook" width="50">
         <img src="../assets/logoinsta.jpeg" alt="instagram" width="50">
         <img src="../assets/logowhats.jpeg" alt="Whatsapp" width="55">
+        </div>
 
-      
     </footer>
+
 
 </body>
 </html>
