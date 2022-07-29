@@ -13,8 +13,12 @@ header {
   background-color: rgb(225, 240, 240);
   position: sticky;
   top: 0;
+
 }
 
+#grad {
+  background: linear-gradient(to left, lightgray, grey);
+}
 .logotaller {
   width: 40px;
 }
