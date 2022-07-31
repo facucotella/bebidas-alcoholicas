@@ -37,29 +37,45 @@ li {
   width: 150px;
   position: relative;
   font-size: 15px;
+  
 }
 
 ul ul {
   position: absolute;
   display: none;
+  
+  
 }
 ul ul li {
   display: block;
+  
 }
 
 ul li:hover ul {
   display: block;
+  background-color: rgba(185, 22, 22, 0.842);
   margin: 0;
   padding: 0;
 }
+ul li:hover {
+  background-color: rgb(225, 240, 240);
+
+
+}
+
 
 ul li a {
   text-decoration: none;
   color: black;
+
+
 }
 
-.subNav {
-  background-color: rgba(185, 22, 22, 0.842);
+nav div a {
+  text-decoration:none;
+  list-style:none;
+  color: black;
+
 }
 
 body {
@@ -563,10 +579,6 @@ grid-area:aperol;
 @media screen and (min-width: 320px) {
 
   /* media queris index*/ 
-
- nav{  /* lo oculto porque la idea es poner menu hamburguesa*/
-  display:none;
-}
 
 .gridOfertas {
   display: grid;
