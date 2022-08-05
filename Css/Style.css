@@ -56,12 +56,16 @@ ul li:hover ul {
   background-color: rgba(185, 22, 22, 0.842);
   margin: 0;
   padding: 0;
+  border-radius: 20px;
+
 }
+
 ul li:hover {
   background-color: rgb(225, 240, 240);
-
+  border-radius: 20px;
 
 }
+
 
 
 ul li a {
@@ -107,7 +111,7 @@ body {
 }
 
 .ofertas {
-  width: 150px;
+  width: 290px;
   background-color: rgb(225, 240, 240);
   padding-top: 10px;
   padding-right: 10px;
