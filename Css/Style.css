@@ -85,8 +85,8 @@ nav div a {
 body {
   background-color: rgb(225, 240, 240);
   background-image: url(../assets/pared.jpeg);
-  background-size: 100%;
-      
+  background-size: cover;
+  
 }
 
 .hola1 {
