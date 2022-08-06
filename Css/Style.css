@@ -89,10 +89,16 @@ body {
       
 }
 
-.fondoTaller {
-  width: 100%;
+.hola1 {
+  width: 33%;
 }
 
+.hola2 {
+  width: 33%;
+}
+.hola3 {
+  width: 33%;
+}
 .textoImgOf{
   background-color: rgb(225, 240, 240);
   padding-right: 10px;
@@ -584,6 +590,16 @@ grid-area:aperol;
 
   /* media queris index*/ 
 
+.hola1{
+  width: 100%;
+}
+
+.hola2, .hola3{
+display: none;
+}
+
+
+
 .gridOfertas {
   display: grid;
   grid-template-columns:auto;
@@ -704,6 +720,13 @@ grid-area:aperol;
 
 @media screen and (min-width: 1200px){
   /* media queris index*/ 
+
+  .hola1{
+    width: 33%;
+  }
+  .hola2, .hola3{
+    display: inline-block;
+    }
 
   .gridOfertas {
     display: grid;
