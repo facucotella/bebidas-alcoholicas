@@ -16,6 +16,18 @@ header {
 
 }
 
+.d-flex button {
+
+  border: 1px solid rgb(206, 23, 13);
+  color: black;
+}
+.d-flex button:hover {
+  background-color: rgb(206, 23, 13);
+  border:  rgb(206, 23, 13);
+  color: black;
+
+}
+
 #grad {
   background: linear-gradient(to left, lightgray, grey);
 }
