@@ -1,47 +1,59 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 /*Css Index*/
-
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(225, 240, 240);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-
 }
 
 .d-flex button {
-
   border: 1px solid rgb(206, 23, 13);
   color: black;
 }
 .d-flex button:hover {
   background-color: rgb(206, 23, 13);
-  border:  rgb(206, 23, 13);
+  border: rgb(206, 23, 13);
   color: black;
-
 }
 
 #grad {
   background: linear-gradient(to left, lightgray, grey);
 }
+
 .logotaller {
   width: 40px;
 }
 
-
-ul  {
+ul {
   list-style: none;
   padding: 30px;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul li {
+  display: block;
+}
+ul li:hover {
+  background-color: rgb(225, 240, 240);
+  border-radius: 20px;
+}
+ul a {
+  text-decoration: none;
+  color: black;
 }
 
 li {
@@ -49,18 +61,6 @@ li {
   width: 150px;
   position: relative;
   font-size: 15px;
-  
-}
-
-ul ul {
-  position: absolute;
-  display: none;
-  
-  
-}
-ul ul li {
-  display: block;
-  
 }
 
 ul li:hover ul {
@@ -69,36 +69,18 @@ ul li:hover ul {
   margin: 0;
   padding: 0;
   border-radius: 20px;
-
-}
-
-ul li:hover {
-  background-color: rgb(225, 240, 240);
-  border-radius: 20px;
-
-}
-
-
-
-ul li a {
-  text-decoration: none;
-  color: black;
-
-
 }
 
 nav div a {
-  text-decoration:none;
-  list-style:none;
+  text-decoration: none;
+  list-style: none;
   color: black;
-
 }
 
 body {
   background-color: rgb(225, 240, 240);
   background-image: url(../assets/pared.jpeg);
   background-size: cover;
-  
 }
 
 .hola1 {
@@ -108,14 +90,15 @@ body {
 .hola2 {
   width: 33%;
 }
+
 .hola3 {
   width: 33%;
 }
-.textoImgOf{
+
+.textoImgOf {
   background-color: rgb(225, 240, 240);
   padding-right: 10px;
   padding-left: 10px;
-
 }
 
 .textoOfertas {
@@ -125,7 +108,6 @@ body {
   text-align: center;
   background-color: rgb(225, 240, 240);
   border-radius: 20px;
-
 }
 
 .ofertas {
@@ -144,25 +126,20 @@ body {
   grid-template-areas: "tituloO tituloO tituloO" "cerveza fernet vino";
   justify-content: space-evenly;
   justify-items: center;
-  text-align: center; 
+  text-align: center;
   row-gap: 20px;
-
 }
 
-.andesIpa{
+.andesIpa {
   grid-area: cerveza;
-   
 }
 
 .fernet {
-grid-area: fernet;
-
+  grid-area: fernet;
 }
 
-
 .vinoRose {
-grid-area: vino;
-
+  grid-area: vino;
 }
 
 footer {
@@ -174,13 +151,10 @@ footer {
 }
 
 /* Hasta aca es css de index*/
-
 /* Css Productos */
-
 .cervezaAndes {
   width: 150px;
 }
-
 
 .gridAndes {
   display: grid;
@@ -190,39 +164,34 @@ footer {
   justify-items: center;
   align-items: center;
   row-gap: 20px;
-  
 }
 
 .tituloSecctionAndes {
   grid-area: titulo;
   margin-bottom: 50px;
-  background-color: rgb(225, 240, 240);  
+  background-color: rgb(225, 240, 240);
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
-    
 }
 
-.textoImagenAnd{
-  background-color: rgb(225, 240, 240);  
+.textoImagenAnd {
+  background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  
-  }
+}
 
 .cervezaAndesIpa {
   grid-area: andesipa;
- 
 }
 
-.cervezaAndesRubia{
+.cervezaAndesRubia {
   grid-area: andesrubia;
-
 }
-.cervezaAndesRoja{
+
+.cervezaAndesRoja {
   grid-area: andesroja;
- 
 }
 
 .gridVinos {
@@ -235,78 +204,71 @@ footer {
   row-gap: 50px;
   justify-content: center;
   align-content: center;
-  justify-items:center;
-  align-items:center;
-  
+  justify-items: center;
+  align-items: center;
 }
 
 .tituloSecctionVinos {
   grid-area: titulov;
-  background-color: rgb(225, 240, 240); 
+  background-color: rgb(225, 240, 240);
   margin-right: 800px;
-  margin-left: 800px; 
+  margin-left: 800px;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   text-align: center;
-    
 }
 
 .textoImagenVin {
-  background-color: rgb(225, 240, 240); 
-  
+  background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  }
+}
 
-  .vinos {
-    width: 150px;
-  }
-  
+.vinos {
+  width: 150px;
+}
+
 .comahueMalbec {
-grid-area: comahuemalbec;
+  grid-area: comahuemalbec;
 }
 
 .comahueMerlot {
   grid-area: comahuemerlot;
- }
+}
 
 .comahueSauv {
-    grid-area: comahuesauv;
-   }
+  grid-area: comahuesauv;
+}
 
 .laFuerzaBlanco {
   grid-area: fuerzablanco;
-
 }
 
 .laFuerzaPrim {
   grid-area: fuerzaprim;
-
 }
 
 .chakana {
   grid-area: chakana;
-
 }
 
-.porvenir{
+.porvenir {
   grid-area: porvenir;
 }
 
-.criosR{
+.criosR {
   grid-area: criosr;
 }
 
-.criosT{
+.criosT {
   grid-area: criost;
 }
 
 .gaseosas {
   width: 150px;
 }
-
 
 .gridGaseosas {
   display: grid;
@@ -318,59 +280,53 @@ grid-area: comahuemalbec;
   row-gap: 50px;
   justify-content: center;
   align-content: center;
-  justify-items:center;
-  align-items:center;
-  
+  justify-items: center;
+  align-items: center;
 }
 
 .tituloSecctionGaseosas {
   grid-area: titulov;
-  background-color: rgb(225, 240, 240); 
+  background-color: rgb(225, 240, 240);
   margin-right: 800px;
-  margin-left: 800px; 
+  margin-left: 800px;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   text-align: center;
-    
 }
 
 .textoImagenGaseo {
-  background-color: rgb(225, 240, 240);  
+  background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  }
-
+}
 
 .pepsiCom {
-grid-area: pepsicom;
+  grid-area: pepsicom;
 }
 
 .pepsiBlack {
   grid-area: pepsiblack;
- }
+}
 
 .tonica {
-    grid-area: tonica;
-   }
+  grid-area: tonica;
+}
 
 .sevenC {
   grid-area: sevencomun;
-
 }
 
 .sevenF {
   grid-area: sevenfree;
-
 }
 
 .mirinda {
   grid-area: mirinda;
-
 }
 
-.alcohol{
+.alcohol {
   width: 150px;
 }
 
@@ -384,170 +340,149 @@ grid-area: pepsicom;
   row-gap: 50px;
   justify-content: center;
   align-content: center;
-  justify-items:center;
-  align-items:center;
-  
+  justify-items: center;
+  align-items: center;
 }
 
 .tituloSecctionAlcohol {
   grid-area: tituloA;
-  background-color: rgb(225, 240, 240); 
+  background-color: rgb(225, 240, 240);
   margin-right: 800px;
-  margin-left: 800px; 
+  margin-left: 800px;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   text-align: center;
-    
 }
 
 .textoImagenAlcohol {
-  background-color: rgb(225, 240, 240);   
+  background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  }
-
+}
 
 .aperol {
-grid-area:aperol;
+  grid-area: aperol;
 }
 
 .campari {
   grid-area: campari;
- }
+}
 
 .carpano {
-    grid-area: carpano;
-   }
+  grid-area: carpano;
+}
 
 .cynar {
   grid-area: cynar;
-
 }
 
 .fenetL {
   grid-area: fernetl;
-
 }
 
 .whisky {
   grid-area: whisky;
-
 }
 
-.ginA{
+.ginA {
   grid-area: gina;
 }
 
-.merle{
+.merle {
   grid-area: merle;
 }
 
-.vodka{
+.vodka {
   grid-area: vodka;
 }
 
 /* hasta aca es css productos*/
-
-
 /* css promos*/
-
-.gridPromo{
+.gridPromo {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
   justify-content: center;
   align-content: center;
-  justify-items:center;
-  align-items:center;
+  justify-items: center;
+  align-items: center;
   row-gap: 20px;
 }
 
 .textoPromos {
-  background-color: rgb(225, 240, 240);   
+  background-color: rgb(225, 240, 240);
   text-align: center;
- 
-  }
-
+}
 
 .tituloSecctionProm {
   grid-area: tituloP;
-  background-color: rgb(225, 240, 240); 
+  background-color: rgb(225, 240, 240);
   margin-top: 50px;
   margin-right: 750px;
   margin-bottom: 50px;
-  margin-left: 750px; 
+  margin-left: 750px;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   text-align: center;
-  
-    
 }
 
 .promos {
-    background-color: rgb(225, 240, 240);
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 150px;
+  background-color: rgb(225, 240, 240);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 150px;
 }
 
-.promo1{
+.promo1 {
   grid-area: promo1;
 }
 
-.promo2{
+.promo2 {
   grid-area: promo2;
-
 }
 
-.promo3{
+.promo3 {
   grid-area: promo3;
-
 }
-
 
 /* hasta aca es css promos*/
-
 /* css combos*/
-
 .tituloSecctionComb {
   grid-area: tituloC;
-  background-color: rgb(225, 240, 240); 
+  background-color: rgb(225, 240, 240);
   margin-top: 50px;
   margin-right: 750px;
   margin-bottom: 50px;
-  margin-left: 750px; 
+  margin-left: 750px;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   text-align: center;
- 
-    
 }
 
 .gridCombo {
- display: grid;
- grid-template-columns: auto auto auto;
- grid-template-rows: auto auto;
- grid-template-areas: "tituloC tituloC tituloC" "combo1 combo2 combo3";
- justify-content: center;
- align-content: center;
- justify-items:center;
- align-items:center;
- row-gap: 20px;
-   
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "tituloC tituloC tituloC" "combo1 combo2 combo3";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 .textoImgComb {
-  background-color: rgb(225, 240, 240);  
+  background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  }
+}
 
 .combos {
   width: 150px;
@@ -555,25 +490,19 @@ grid-area:aperol;
 
 .combo1 {
   grid-area: combo1;
-
 }
 
 .combo2 {
   grid-area: combo2;
-  
 }
 
 .combo3 {
   grid-area: combo3;
-  
 }
 
-
 /* hasta aca es css combos*/
-
 /* css contacto*/
-
-.gridCont{
+.gridCont {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -582,164 +511,128 @@ grid-area:aperol;
   align-content: center;
 }
 
-
-
 .form {
-    grid-area: forms;
-    background-color: rgb(225, 240, 240);
-    text-align: center;
-    margin-top: 100px;
-    margin-right: 500px;
-    margin-bottom: 800px;
-    margin-left: 500px;
-    
-
+  grid-area: forms;
+  background-color: rgb(225, 240, 240);
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 500px;
+  margin-bottom: 800px;
+  margin-left: 500px;
 }
 
 /* hasta aca es css contacto*/
-
 @media screen and (min-width: 320px) {
-
-  /* media queris index*/ 
-
-.hola1{
-  width: 100%;
+  /* media queris index*/
+  .hola1 {
+    width: 100%;
+  }
+  .hola2, .hola3 {
+    display: none;
+  }
+  .gridOfertas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloO" "cerveza";
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+  }
+  /*hasta aca media queris index*/
+  /* media queris productos */
+  .gridAndes {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "andesipa";
+    justify-items: center;
+    align-items: center;
+  }
+  .gridVinos {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulov" "comahuemalbec" "fuerzablanco" "porvenir";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridGaseosas {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "titulov" "comahuemalbec" "fuerzablanco" "porvenir";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridAlcohol {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "tituloA" "aperol" "cynar" "gina";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  /* hasta aca media queris productos*/
+  /*media queris promo*/
+  .gridPromo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloP" "promo1";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  /*hasta aca media queris promo*/
+  /*media queris combos*/
+  .gridCombo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloC" "combo1";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  /*hasta aca media queris combos*/
+  /*media queris contacto*/
+  .gridCont {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "forms";
+    justify-content: center;
+    align-content: center;
+  }
+  /*hasta aca media queris contacto*/
 }
-
-.hola2, .hola3{
-display: none;
-}
-
-
-
-.gridOfertas {
-  display: grid;
-  grid-template-columns:auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "tituloO" "cerveza";
-  justify-content: space-evenly;
-  justify-items: center;
-  text-align: center; 
-
-}
-/*hasta aca media queris index*/
-
-/* media queris productos */
-
-.gridAndes {
-  display: grid;
-  margin-top: 100px;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "titulo" "andesipa";
-  justify-items: center;
-  align-items: center;
-  
-}
-
-.gridVinos {
-  display: grid;
-  margin-top: 50px;
-  padding: 20px 20px 20px 20px;
-  grid-template-columns: auto ;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "titulov" "comahuemalbec" "fuerzablanco" "porvenir";
-  row-gap: 50px;
-  justify-content: center;
-  align-content: center;
-  justify-items:center;
-  align-items:center;
-  
-}
-.gridGaseosas {
-  display: grid;
-  margin-top: 50px;
-  padding: 20px 20px 20px 20px;
-  grid-template-columns: auto ;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "titulov" "comahuemalbec" "fuerzablanco" "porvenir";
-  row-gap: 50px;
-  justify-content: center;
-  align-content: center;
-  justify-items:center;
-  align-items:center;
-  
-}
-.gridAlcohol {
-  display: grid;
-  margin-top: 50px;
-  padding: 20px 20px 20px 20px;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "tituloA" "aperol" "cynar" "gina";
-  row-gap: 50px;
-  justify-content: center;
-  align-content: center;
-  justify-items:center;
-  align-items:center;
-  
-}
-
-
-/* hasta aca media queris productos*/
-
-/*media queris promo*/
-
-.gridPromo{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "tituloP" "promo1";
-  justify-content: center;
-  align-content: center;
-  justify-items:center;
-  align-items:center;
-}
-/*hasta aca media queris promo*/
-
-
-/*media queris combos*/
-
-.gridCombo {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
- grid-template-areas: "tituloC" "combo1";
- justify-content: center;
- align-content: center;
- justify-items:center;
- align-items:center;
-    
- }
-
-/*hasta aca media queris combos*/
-
-/*media queris contacto*/
-
-.gridCont{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "forms";
-  justify-content:center;
-  align-content: center;
-}
-
-/*hasta aca media queris contacto*/
-
-}
-
-
-@media screen and (min-width: 1200px){
-  /* media queris index*/ 
-
-  .hola1{
+@media screen and (min-width: 1200px) {
+  /* media queris index*/
+  .hola1 {
     width: 33%;
   }
-  .hola2, .hola3{
+  .hola2, .hola3 {
     display: inline-block;
-    }
-
+  }
   .gridOfertas {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -747,15 +640,12 @@ display: none;
     grid-template-areas: "tituloO tituloO tituloO" "cerveza fernet vino";
     justify-content: space-evenly;
     justify-items: center;
-    text-align: center; 
-  
+    text-align: center;
   }
-
-  nav{
-    display:block;
+  nav {
+    display: block;
   }
   /*hasta aca media queris index*/
-  
   /* media queris productos*/
   .gridAndes {
     display: grid;
@@ -764,88 +654,73 @@ display: none;
     grid-template-areas: "titulo titulo titulo" "andesipa andesrubia andesroja";
     justify-items: center;
     align-items: center;
-
-    }
-
-    .gridVinos {
-      display: grid;
-      margin-top: 50px;
-      padding: 20px 20px 20px 20px;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas: "titulov titulov titulov" "comahuemalbec comahuemerlot comauhuesauv" "fuerzablanco fuerzaprim chakana" "porvenir criosr criost";
-      row-gap: 50px;
-      justify-content: center;
-      align-content: center;
-      justify-items:center;
-      align-items:center;
-      
-    }
-
-    .gridGaseosas {
-      display: grid;
-      margin-top: 50px;
-      padding: 20px 20px 20px 20px;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
-      grid-template-areas: "titulov titulov titulov" "comahuemalbec comahuemerlot comauhuesauv" "fuerzablanco fuerzaprim chakana" "porvenir criosr criost";
-      row-gap: 50px;
-      justify-content: center;
-      align-content: center;
-      justify-items:center;
-      align-items:center;
-      
-    }
-    .gridAlcohol {
-      display: grid;
-      margin-top: 50px;
-      padding: 20px 20px 20px 20px;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas: "tituloA tituloA tituloA" "aperol campari carpano" "cynar fernetl whisky" "gina merle vodka";
-      row-gap: 50px;
-      justify-content: center;
-      align-content: center;
-      justify-items:center;
-      align-items:center;
-      
-    }
-
+  }
+  .gridVinos {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulov titulov titulov" "comahuemalbec comahuemerlot comauhuesauv" "fuerzablanco fuerzaprim chakana" "porvenir criosr criost";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridGaseosas {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "titulov titulov titulov" "comahuemalbec comahuemerlot comauhuesauv" "fuerzablanco fuerzaprim chakana" "porvenir criosr criost";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridAlcohol {
+    display: grid;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "tituloA tituloA tituloA" "aperol campari carpano" "cynar fernetl whisky" "gina merle vodka";
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
   /*hasta aca media queris productos*/
-
   /*media queris promos*/
-
-  .gridPromo{
+  .gridPromo {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
     justify-content: center;
     align-content: center;
-    justify-items:center;
-    align-items:center;
+    justify-items: center;
+    align-items: center;
   }
   /*hasta aca media queris promo*/
-  
-
   /*media queris combos*/
-
   .gridCombo {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-   grid-template-areas: "tituloC tituloC tituloC" "combo1 combo2 combo3";
-   justify-content: center;
-   align-content: center;
-   justify-items:center;
-   align-items:center;
-      
-   }
+    grid-template-areas: "tituloC tituloC tituloC" "combo1 combo2 combo3";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
   /*hasta aca media queris combos*/
-
   /*media queris contacto*/
-
-  .gridCont{
+  .gridCont {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -853,8 +728,5 @@ display: none;
     justify-content: center;
     align-content: center;
   }
-  
   /*hasta aca media queris contacto*/
-
-
-}
+}/*# sourceMappingURL=style.css.map */
