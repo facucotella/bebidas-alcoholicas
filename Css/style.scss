@@ -55,7 +55,13 @@ ul {
             background-color: $colorPrincipal;
              border-radius: 20px;
         }
-       
+       &:hover ul {
+        display: block;
+        background-color: rgba(185, 22, 22, 0.842);
+        margin: 0;
+        padding: 0;
+        border-radius: 20px;
+       }
       
     }
 
@@ -77,17 +83,7 @@ ul {
   }
   
 
-  ul li:hover ul {
-    display: block;
-    background-color: rgba(185, 22, 22, 0.842);
-    margin: 0;
-    padding: 0;
-    border-radius: 20px;
-  
-  }
-  
 
-  
 
   nav div a {
     text-decoration:none;

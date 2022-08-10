@@ -52,6 +52,13 @@ ul li:hover {
   background-color: rgb(225, 240, 240);
   border-radius: 20px;
 }
+ul li:hover ul {
+  display: block;
+  background-color: rgba(185, 22, 22, 0.842);
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+}
 ul a {
   text-decoration: none;
   color: black;
@@ -62,14 +69,6 @@ li {
   width: 150px;
   position: relative;
   font-size: 15px;
-}
-
-ul li:hover ul {
-  display: block;
-  background-color: rgba(185, 22, 22, 0.842);
-  margin: 0;
-  padding: 0;
-  border-radius: 20px;
 }
 
 nav div a {
