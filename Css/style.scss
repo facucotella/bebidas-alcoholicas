@@ -1,6 +1,15 @@
 /* variables */
 $colorPrincipal:  rgb(225, 240, 240);
 
+$mapaEstiloTitulos: (margin1: 50px, margin2: 50px, centrado: center, fondo: $colorPrincipal, radius: 20px) ;
+
+@mixin backgroundPadding {
+  background-color: $colorPrincipal;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +40,7 @@ $colorPrincipal:  rgb(225, 240, 240);
   }
   .logotaller {
     width: 40px;
+    
   }
   
 
@@ -65,8 +75,6 @@ ul {
       
     }
 
-
-
     a {
         text-decoration: none;
         color: black;
@@ -82,8 +90,6 @@ ul {
     
   }
   
-
-
 
   nav div a {
     text-decoration:none;
@@ -109,30 +115,28 @@ ul {
   .hola3 {
     width: 33%;
   }
+
   .textoImgOf{
-    background-color: $colorPrincipal;
-    padding-right: 10px;
-    padding-left: 10px;
+    @include backgroundPadding;
   
   }
   
   .textoOfertas {
     grid-area: tituloO;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    background-color: $colorPrincipal;
-    border-radius: 20px;
+    background-color: map-get($mapaEstiloTitulos, fondo);
+    margin-top:  map-get($mapaEstiloTitulos, margin1) ;
+    margin-bottom:  map-get($mapaEstiloTitulos, margin2) ;
+    text-align: map-get($mapaEstiloTitulos , centrado );
+    border-radius: map-get($mapaEstiloTitulos , radius );
   
   }
   
   .ofertas {
-    width: 290px;
-    background-color:  $colorPrincipal;
-    padding-top: 10px;
-    padding-right: 10px;
+   @include backgroundPadding;
+    width: 290px;    
+    padding-top: 10px;    
     padding-bottom: 10px;
-    padding-left: 10px;
+    
   }
   
   .gridOfertas {
@@ -250,13 +254,10 @@ ul {
   }
   
   .textoImagenVin {
-    background-color: $colorPrincipal; 
-    
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    }
+    @extend .textoImagenAnd;
+    background-color: $colorPrincipal;     
+
+  }
   
     .vinos {
       width: 150px;
@@ -333,11 +334,9 @@ ul {
   }
   
   .textoImagenGaseo {
+    @extend .textoImagenAnd;
     background-color:  $colorPrincipal;  
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+   
     }
   
   
@@ -399,11 +398,8 @@ ul {
   }
   
   .textoImagenAlcohol {
-    background-color: $colorPrincipal;   
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    @extend .textoImagenAnd;
+    background-color: $colorPrincipal;      
     }
   
   

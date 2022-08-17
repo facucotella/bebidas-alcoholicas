@@ -103,20 +103,20 @@ body {
 
 .textoOfertas {
   grid-area: tituloO;
+  background-color: rgb(225, 240, 240);
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  background-color: rgb(225, 240, 240);
   border-radius: 20px;
 }
 
 .ofertas {
-  width: 290px;
   background-color: rgb(225, 240, 240);
-  padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
+  width: 290px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .gridOfertas {
@@ -174,7 +174,7 @@ footer {
   border-radius: 20px;
 }
 
-.textoImagenAnd {
+.textoImagenAnd, .textoImagenAlcohol, .textoImagenGaseo, .textoImagenVin {
   background-color: rgb(225, 240, 240);
   text-align: center;
   padding-top: 20px;
@@ -220,10 +220,6 @@ footer {
 
 .textoImagenVin {
   background-color: rgb(225, 240, 240);
-  text-align: center;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .vinos {
@@ -296,10 +292,6 @@ footer {
 
 .textoImagenGaseo {
   background-color: rgb(225, 240, 240);
-  text-align: center;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .pepsiCom {
@@ -356,10 +348,6 @@ footer {
 
 .textoImagenAlcohol {
   background-color: rgb(225, 240, 240);
-  text-align: center;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .aperol {
