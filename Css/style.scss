@@ -17,8 +17,7 @@ $mapaEstiloTitulos: (margin1: 50px, margin2: 50px, centrado: center, fondo: $col
   
 @import "header";
 
-  /*Css Index*/
-  
+  /*Css Index*/ 
  
 
   .d-flex{
@@ -97,6 +96,16 @@ ul {
     color: black;
   
   }
+
+  .dropdown-item:hover {
+    border-radius: 20px;
+  }
+
+
+  .dropdown-item:active {
+    background-color:rgba(206, 23, 13, 0.501) ;
+
+  }
   
   body {
     background-color: $colorPrincipal;
@@ -169,10 +178,10 @@ ul {
   
   footer {
     display: flex;
-    margin-top: 300px;
+    margin-top: 330px;
     justify-content: center;
     background-color: $colorPrincipal;
-    position: end;
+    
   }
   
   /* Hasta aca es css de index*/
@@ -566,30 +575,30 @@ ul {
   /* hasta aca es css combos*/
   
   /* css contacto*/
-  
-  .gridCont{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "forms";
-    justify-content: start;
-    align-content: center;
+
+ .form1 {
+      width: 85%;
+      margin: 50px auto;
+      background-color:  rgba(206, 23, 13, 0.501);
+       
   }
-  
-  
-  
-  .form {
-      grid-area: forms;
+
+  .col-12{
+    button {
       background-color: $colorPrincipal;
-      text-align: center;
-      margin-top: 100px;
-      margin-right: 500px;
-      margin-bottom: 800px;
-      margin-left: 500px;
-      
-  
+      border: 1px solid rgb(206, 23, 13);
+      color: rgb(0, 0, 0);
+
+      &:hover{
+          background-color: rgb(206, 23, 13);
+          border:  rgb(206, 23, 13);
+          color: black;
+      }
   }
-  
+
+
+  }
+
   /* hasta aca es css contacto*/
   
   @media screen and (min-width: 320px) {
@@ -708,20 +717,7 @@ ul {
   
   /*hasta aca media queris combos*/
   
-  /*media queris contacto*/
-  
-  .gridCont{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "forms";
-    justify-content:center;
-    align-content: center;
-  }
-  
-  /*hasta aca media queris contacto*/
-  
-  }
+   }
   
   
   @media screen and (min-width: 1200px){
@@ -745,9 +741,6 @@ ul {
     
     }
   
-    nav{
-      display:block;
-    }
     /*hasta aca media queris index*/
     
     /* media queris productos*/
@@ -836,20 +829,7 @@ ul {
         
      }
     /*hasta aca media queris combos*/
-  
-    /*media queris contacto*/
-  
-    .gridCont{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "forms";
-      justify-content: center;
-      align-content: center;
-    }
-    
-    /*hasta aca media queris contacto*/
-  
+       
   
   }
   

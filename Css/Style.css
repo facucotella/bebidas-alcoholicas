@@ -77,6 +77,14 @@ nav div a {
   color: black;
 }
 
+.dropdown-item:hover {
+  border-radius: 20px;
+}
+
+.dropdown-item:active {
+  background-color: rgba(206, 23, 13, 0.501);
+}
+
 body {
   background-color: rgb(225, 240, 240);
   background-image: url(../assets/pared.jpeg);
@@ -144,10 +152,9 @@ body {
 
 footer {
   display: flex;
-  margin-top: 300px;
+  margin-top: 330px;
   justify-content: center;
   background-color: rgb(225, 240, 240);
-  position: end;
 }
 
 /* Hasta aca es css de index*/
@@ -490,23 +497,21 @@ footer {
 
 /* hasta aca es css combos*/
 /* css contacto*/
-.gridCont {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "forms";
-  justify-content: start;
-  align-content: center;
+.form1 {
+  width: 85%;
+  margin: 50px auto;
+  background-color: rgba(206, 23, 13, 0.501);
 }
 
-.form {
-  grid-area: forms;
+.col-12 button {
   background-color: rgb(225, 240, 240);
-  text-align: center;
-  margin-top: 100px;
-  margin-right: 500px;
-  margin-bottom: 800px;
-  margin-left: 500px;
+  border: 1px solid rgb(206, 23, 13);
+  color: rgb(0, 0, 0);
+}
+.col-12 button:hover {
+  background-color: rgb(206, 23, 13);
+  border: rgb(206, 23, 13);
+  color: black;
 }
 
 /* hasta aca es css contacto*/
@@ -602,16 +607,6 @@ footer {
     align-items: center;
   }
   /*hasta aca media queris combos*/
-  /*media queris contacto*/
-  .gridCont {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "forms";
-    justify-content: center;
-    align-content: center;
-  }
-  /*hasta aca media queris contacto*/
 }
 @media screen and (min-width: 1200px) {
   /* media queris index*/
@@ -629,9 +624,6 @@ footer {
     justify-content: space-evenly;
     justify-items: center;
     text-align: center;
-  }
-  nav {
-    display: block;
   }
   /*hasta aca media queris index*/
   /* media queris productos*/
@@ -707,14 +699,4 @@ footer {
     align-items: center;
   }
   /*hasta aca media queris combos*/
-  /*media queris contacto*/
-  .gridCont {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "forms";
-    justify-content: center;
-    align-content: center;
-  }
-  /*hasta aca media queris contacto*/
 }/*# sourceMappingURL=style.css.map */
