@@ -115,13 +115,16 @@ ul {
   }
   
   .hola1 {
+    margin-top: 55px;
     width: 33%;
   }
   
   .hola2 {
+    margin-top: 55px;
     width: 33%;
   }
   .hola3 {
+    margin-top: 55px;
     width: 33%;
   }
 
@@ -206,6 +209,7 @@ ul {
   
   .tituloSecctionAndes {
     grid-area: titulo;
+    margin-top: 100px;
     margin-bottom: 50px;
     background-color:  $colorPrincipal;  
     padding: 10px 10px 10px 10px;
@@ -478,7 +482,7 @@ ul {
   .tituloSecctionProm {
     grid-area: tituloP;
     background-color: $colorPrincipal; 
-    margin-top: 50px;
+    margin-top: 200px;
     margin-right: 750px;
     margin-bottom: 50px;
     margin-left: 750px; 
@@ -520,7 +524,7 @@ ul {
   .tituloSecctionComb {
     grid-area: tituloC;
     background-color: $colorPrincipal; 
-    margin-top: 50px;
+    margin-top: 200px;
     margin-right: 750px;
     margin-bottom: 50px;
     margin-left: 750px; 
@@ -578,7 +582,7 @@ ul {
 
  .form1 {
       width: 85%;
-      margin: 50px auto;
+      margin: 200px auto;
       background-color:  rgba(206, 23, 13, 0.501);
        
   }
