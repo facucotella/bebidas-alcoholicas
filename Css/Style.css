@@ -13,6 +13,7 @@ header {
   background-color: rgb(225, 240, 240);
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 /*Css Index*/
@@ -399,16 +400,15 @@ footer {
 
 /* hasta aca es css productos*/
 /* css promos*/
-.gridPromo {
+.gridTituPromo {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "tituloP";
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
-  row-gap: 20px;
 }
 
 .textoPromos {
@@ -428,25 +428,16 @@ footer {
   text-align: center;
 }
 
-.promos {
+.card-img-top {
+  height: 350px;
+}
+
+.card {
   background-color: rgb(225, 240, 240);
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
-  width: 150px;
-}
-
-.promo1 {
-  grid-area: promo1;
-}
-
-.promo2 {
-  grid-area: promo2;
-}
-
-.promo3 {
-  grid-area: promo3;
+  text-align: center;
 }
 
 /* hasta aca es css promos*/
@@ -588,30 +579,31 @@ footer {
   }
   /* hasta aca media queris productos*/
   /*media queris promo*/
-  .gridPromo {
+  .gridTituPromo {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP" "promo1";
+    grid-template-rows: auto;
+    grid-template-areas: "tituloP";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
   }
-  /*hasta aca media queris promo*/
-  /*media queris combos*/
-  .gridCombo {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloC" "combo1";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-  /*hasta aca media queris combos*/
 }
+/*hasta aca media queris promo*/
+/*media queris combos*/
+.gridCombo {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "tituloC" "combo1";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/*hasta aca media queris combos*/
 @media screen and (min-width: 1200px) {
   /* media queris index*/
   .hola1 {
@@ -679,18 +671,6 @@ footer {
     align-items: center;
   }
   /*hasta aca media queris productos*/
-  /*media queris promos*/
-  .gridPromo {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-  /*hasta aca media queris promo*/
   /*media queris combos*/
   .gridCombo {
     display: grid;

@@ -460,16 +460,16 @@ ul {
   
   /* css promos*/
   
-  .gridPromo{
+  .gridTituPromo{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+    grid-template-areas: "tituloP";
     justify-content: center;
     align-content: center;
     justify-items:center;
     align-items:center;
-    row-gap: 20px;
+  
   }
   
   .textoPromos {
@@ -492,32 +492,20 @@ ul {
     
       
   }
-  
-  .promos {
-      background-color: $colorPrincipal;
-      padding-top: 10px;
-      padding-right: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      width: 150px;
+
+  .card-img-top {
+     height: 350px;
   }
   
-  .promo1{
-    grid-area: promo1;
+  .card{
+    background-color: $colorPrincipal;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
   }
-  
-  .promo2{
-    grid-area: promo2;
-  
-  }
-  
-  .promo3{
-    grid-area: promo3;
-  
-  }
-  
-  
-  /* hasta aca es css promos*/
+
+   /* hasta aca es css promos*/
   
   /* css combos*/
   
@@ -692,15 +680,17 @@ ul {
   
   /*media queris promo*/
   
-  .gridPromo{
+  .gridTituPromo{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP" "promo1";
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+    grid-template-areas: "tituloP";
     justify-content: center;
     align-content: center;
     justify-items:center;
     align-items:center;
+  
+  }
   }
   /*hasta aca media queris promo*/
   
@@ -721,9 +711,7 @@ ul {
   
   /*hasta aca media queris combos*/
   
-   }
-  
-  
+   
   @media screen and (min-width: 1200px){
     /* media queris index*/ 
   
@@ -803,21 +791,6 @@ ul {
       }
   
     /*hasta aca media queris productos*/
-  
-    /*media queris promos*/
-  
-    .gridPromo{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
-      justify-content: center;
-      align-content: center;
-      justify-items:center;
-      align-items:center;
-    }
-    /*hasta aca media queris promo*/
-    
   
     /*media queris combos*/
   
