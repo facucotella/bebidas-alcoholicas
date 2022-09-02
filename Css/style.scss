@@ -764,23 +764,18 @@ ul {
   /* hasta aca media queris productos*/
   
   /*media queris promo*/
-  
-  .gridForm{
+  .gridPromo{
     display: grid;
-    margin: 0px auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    justify-content: center;
-    justify-items: center;
-    background-color: $colorPrincipal;
     grid-template-columns: auto;
-    grid-template-rows: "auto auto auto auto" "auto";
-    grid-template-areas: "p1" "p2" "p3" "p4" "logo";
-    border: 1px dotted black;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloP" "promo1";
+    row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    justify-items:center;
+    align-items:center;
   }
-
  
-  }
   /*hasta aca media queris promo*/
   
   
@@ -797,15 +792,27 @@ ul {
    align-items:center;
       
    }
-  
-  /*hasta aca media queris combos*/
-  /*Media queris form*/
-  
- 
 
-  /*Hasta aca media queris form*/
+   /*hasta aca media queris combos*/
   
-   
+  /*Media queris form*/
+
+  .gridForm{
+    display: grid;
+    margin: 0px auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    justify-items: center;
+    background-color: $colorPrincipal;
+    grid-template-columns: auto;
+    grid-template-rows: "auto auto auto auto" "auto";
+    grid-template-areas: "p1" "p2" "p3" "p4" "logo";
+    border: 1px dotted black;
+  }
+  /*Hasta aca media queris form*/
+} 
+     
   @media screen and (min-width: 1200px){
     /* media queris index*/ 
   
@@ -929,8 +936,7 @@ ul {
       border-radius: 10px;
       
     }
-  
-   
+     
    /*hasta aca media queris form*/
   }
   
