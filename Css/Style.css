@@ -591,6 +591,7 @@ footer {
 }
 
 .mapa {
+  width: 50%;
   display: flex;
   margin: 80px auto;
 }
@@ -813,6 +814,11 @@ footer {
     grid-template-areas: "p1" "p2" "p3" "p4" "logo";
     border: 1px dotted black;
     border-radius: 10px;
+  }
+  .mapa {
+    width: 50%;
+    display: flex;
+    margin: 80px auto;
   }
   /*hasta aca media queris form*/
 }/*# sourceMappingURL=style.css.map */
