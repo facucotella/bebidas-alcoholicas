@@ -703,6 +703,10 @@ footer {
     grid-template-areas: "p1" "p2" "p3" "p4" "logo";
     border: 1px dotted black;
   }
+  .mapa {
+    width: 90%;
+    height: 90%;
+  }
   /*Hasta aca media queris form*/
 }
 @media screen and (min-width: 1200px) {
