@@ -27,7 +27,7 @@ $mapaEstiloTitulos: (margin1: 50px, margin2: 50px, centrado: center, fondo: $col
         color: black;
         &:hover{
             background-color: rgb(206, 23, 13);
-            border:  rgb(206, 23, 13);
+            border: 1px solid rgb(206, 23, 13);
             color: black;
         }
     }
@@ -190,7 +190,22 @@ ul {
   /* Hasta aca es css de index*/
   
   /* Css Productos */
-  
+
+  .btn{
+    background-color: lightgray;
+    color: black;
+    border: 1px solid rgb(206, 23, 13);
+    margin-bottom: 10px;
+    &:hover{
+      background-color: rgb(206, 23, 13);
+      border: 1px solid rgb(206, 23, 13);
+     color: black;
+    }
+    &:active{
+      background-color: darkred;
+    }
+  }
+
   .cervezaAndes {
     width: 150px;
   }
