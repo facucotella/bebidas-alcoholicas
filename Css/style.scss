@@ -172,8 +172,7 @@ ul {
   grid-area: fernet;
   
   }
-  
-  
+    
   .vinoRose {
   grid-area: vino;
   
@@ -475,25 +474,12 @@ ul {
   
   /* css promos*/
   
-  .gridTituPromo{
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto ;
-    grid-template-areas: "tituloP";
-    justify-content: center;
-    align-content: center;
-    justify-items:center;
-    align-items:center;
-  
-  }
-  
   .textoPromos {
     background-color: $colorPrincipal ;   
     text-align: center;
    
     }
-  
-  
+    
   .tituloSecctionProm {
     grid-area: tituloP;
     background-color: $colorPrincipal; 
@@ -504,22 +490,60 @@ ul {
     padding: 10px 40px 10px 40px;
     border-radius: 20px;
     text-align: center;
-    
-      
-  }
-
-  .card-img-top {
-     height: 350px;
+          
   }
   
-  .card{
-    background-color: $colorPrincipal;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: center;
+  .gridPromo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
+    justify-content: center;
+    align-content: center;
+    justify-items:center;
+    align-items:center;
   }
-
+  
+  .textoPromos {
+    background-color: rgb(225, 240, 240);   
+    text-align: center;
+   
+    }
+  
+  
+  .tituloSecctionProm {
+    grid-area: tituloP;
+    background-color: rgb(225, 240, 240); 
+    margin-right: 750px;
+    margin-left: 750px; 
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    text-align: center;
+      
+  }
+  
+  .promos {
+      background-color: rgb(225, 240, 240);
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      width: 150px;
+  }
+  
+  .promo1{
+    grid-area: promo1;
+  }
+  
+  .promo2{
+    grid-area: promo2;
+  
+  }
+  
+  .promo3{
+    grid-area: promo3;
+  
+  }
    /* hasta aca es css promos*/
   
   /* css combos*/
@@ -577,8 +601,7 @@ ul {
     grid-area: combo3;
     
   }
-  
-  
+    
   /* hasta aca es css combos*/
   
   /* css contacto*/
@@ -587,6 +610,8 @@ ul {
       width: 85%;
       margin: 200px auto;
       background-color:  rgba(206, 23, 13, 0.501);
+      border: 1px solid black;
+      border-radius: 10px;
        
   }
 
@@ -603,9 +628,56 @@ ul {
       }
   }
 
+  }
+
+  .gridForm{
+    display: grid;
+    width: 50%;
+    margin: 0px auto;
+    justify-content: center;
+    justify-items: center;
+    background-color: $colorPrincipal;
+    grid-template-columns: auto;
+    grid-template-rows: "auto auto auto auto" "auto";
+    grid-template-areas: "p1" "p2" "p3" "p4" "logo";
+    border: 1px dotted black;
+    border-radius: 10px;
+   
+    
+  }
+
+  .p1{
+    grid-area: p1;
+    text-decoration: underline;
+  }
+
+  .p2{
+    grid-area: p2;
+    font-style: italic;
 
   }
 
+  .p3{
+    grid-area: p3;
+    font-style: italic;
+
+  }
+
+  .p4{
+    grid-area: p4;
+    font-style: italic;
+
+  }
+  
+  .logo{
+    grid-area: logo;
+    width: 30px;
+  }
+
+  .mapa{
+    display: flex;
+    margin: 80px auto;
+  }
   /* hasta aca es css contacto*/
   
   @media screen and (min-width: 320px) {
@@ -619,8 +691,7 @@ ul {
   .hola2, .hola3{
   display: none;
   }
-  
-  
+    
   
   .gridOfertas {
     display: grid;
@@ -690,22 +761,25 @@ ul {
     
   }
   
-  
   /* hasta aca media queris productos*/
   
   /*media queris promo*/
   
-  .gridTituPromo{
+  .gridForm{
     display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto ;
-    grid-template-areas: "tituloP";
+    margin: 0px auto;
+    padding-right: 20px;
+    padding-left: 20px;
     justify-content: center;
-    align-content: center;
-    justify-items:center;
-    align-items:center;
-  
+    justify-items: center;
+    background-color: $colorPrincipal;
+    grid-template-columns: auto;
+    grid-template-rows: "auto auto auto auto" "auto";
+    grid-template-areas: "p1" "p2" "p3" "p4" "logo";
+    border: 1px dotted black;
   }
+
+ 
   }
   /*hasta aca media queris promo*/
   
@@ -725,6 +799,11 @@ ul {
    }
   
   /*hasta aca media queris combos*/
+  /*Media queris form*/
+  
+ 
+
+  /*Hasta aca media queris form*/
   
    
   @media screen and (min-width: 1200px){
@@ -806,6 +885,19 @@ ul {
       }
   
     /*hasta aca media queris productos*/
+
+      /*Media queris promos*/
+      .gridPromo{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "tituloP tituloP tituloP" "promo1 promo2 promo3";
+        justify-content: center;
+        align-content: center;
+        justify-items:center;
+        align-items:center;
+      }
+      /*Hasta aca media queris promos*/
   
     /*media queris combos*/
   
@@ -821,7 +913,24 @@ ul {
         
      }
     /*hasta aca media queris combos*/
-       
+    
+    /*Media queris form*/
+    .gridForm{
+      display: grid;
+      width: 50%;
+      margin: 0px auto;
+      justify-content: center;
+      justify-items: center;
+      background-color: $colorPrincipal;
+      grid-template-columns: auto;
+      grid-template-rows: "auto auto auto auto" "auto";
+      grid-template-areas: "p1" "p2" "p3" "p4" "logo";
+      border: 1px dotted black;
+      border-radius: 10px;
+      
+    }
   
+   
+   /*hasta aca media queris form*/
   }
   
