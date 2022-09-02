@@ -590,10 +590,16 @@ footer {
   width: 30px;
 }
 
+.icons {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
 .mapa {
   width: 50%;
   display: flex;
-  margin: 80px auto;
+  margin: 40px auto;
 }
 
 /* hasta aca es css contacto*/
@@ -818,7 +824,7 @@ footer {
   .mapa {
     width: 50%;
     display: flex;
-    margin: 80px auto;
+    margin: 40px auto;
   }
   /*hasta aca media queris form*/
 }/*# sourceMappingURL=style.css.map */
